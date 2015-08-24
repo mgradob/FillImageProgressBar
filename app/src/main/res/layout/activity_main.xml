@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.mgb.fillimageprogressbar.FillImageProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fillOrientation="bottom_top"
+        app:filledSectionColor="#0000FF"
+        app:src="@mipmap/icon_lock_installing"
+        app:unfilledSectionColor="#FF0000" />
+
+    <Button
+        android:id="@+id/detButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Determinate" />
+
+    <Button
+        android:id="@+id/indButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indeterminate" />
+
+</LinearLayout>
